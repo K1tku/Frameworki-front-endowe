@@ -1,9 +1,15 @@
-import {FC} from 'React';
+import React, { FC } from 'react';
 import styled from 'styled-components';
 
 import {Wrapper} from "../StyledHelpers/Components";
 import {Colors} from "../StyledHelpers/Colors";
 import { ExpandedMenu } from './ExpandedMenu';
+
+import logo from '../../media/icons/logo1.png';
+import house from '../icons/house.png';
+import search from '../icons/search.png';
+import comments from '../icons/comments.png';
+import bell from '../icons/bell.png';
 
 
 const Wrapper2 = styled(Wrapper)`
@@ -12,7 +18,8 @@ const Wrapper2 = styled(Wrapper)`
 
 const InnerWrapper = styled.div`
    idth: 1200px;
-   background: ${Colors.white}`;
+   background: ${Colors.white}
+`;
 
 const RightIcons = styled.div`
     
@@ -22,34 +29,28 @@ const InputWrapper = styled.div`
 
 `;
 
-const CustomImg = styled.img`
 
-`;
-
-const CustomInput = styled.input`
-
-`;
 
 export const TopBar: FC = () => {
     return (
-        <Wrapper2>
+        <Wrapper>
             <InnerWrapper>
-                <CustomImg src={"./logo.png"}/>
+                <img src={logo} alt="logo" />
                 <div>
                     <ExpandedMenu/>
                 </div>
                 <InputWrapper>
-                    <CustomInput type={"text"}/>
                     <input type={"text"}/>
-                    <CustomImg src={"./icons/search.png"}/>
+                    <input type={"text"}/>
+                    <img src={search}/>
                 </InputWrapper>
                 <RightIcons>
-                    <CustomImg src={"./icons/house.png"}/>
-                    <CustomImg src={"./icons/comments.png"}/>
-                    <CustomImg src={"./icons/bell.png"}/>
+                    <img src={house}/>
+                    <img src={comments}/>
+                    <img src={bell}/>
                 </RightIcons>
             </InnerWrapper>
-        </Wrapper2>
+        </Wrapper>
     );
 };
 
