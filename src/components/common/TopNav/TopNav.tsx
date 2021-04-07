@@ -1,6 +1,6 @@
 import { FC } from 'React';
 
-export const ExpandedMenu: FC = () => {
+export const TopNav: FC = () => {
     return (
         <></>
     );
