@@ -8,7 +8,7 @@ import { Colors } from '../StyledHelpers/Colors';
 
 
 const Content = styled.div`
-  max-width: 1200px;
+  
   align-items: center;
   display: flex;
 `;
@@ -19,7 +19,7 @@ const MainPage: FC = () => {
             <TopBar/>
             <Content>
                 <LeftMenu/>
-                <div>content</div>
+                <div></div>
             </Content>
         </Wrapper>
     );
